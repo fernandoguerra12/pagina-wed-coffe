@@ -1,4 +1,6 @@
-:root {
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
+
+root {
   --white-color: #fff;
   --black-color: #393939;
   --black-segundary: #333333;
@@ -17,11 +19,15 @@
 body {
   font-size: 62.5%;
   background-color: var(--white-color);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 a {
   text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 /* * clase reaulisable */
@@ -48,6 +54,11 @@ a {
   flex-wrap: wrap;
 }
 
+.section {
+  padding: 3rem 0;
+}
+
+/* ! aqui son botones reutilisable */
 .btn__toggler {
   display: none;
   width: 44px;
@@ -97,6 +108,28 @@ a {
   -o-transform: translateY(6px);
 }
 
+.btn__general {
+  margin-top: 1.3rem;
+  padding: 0.7rem 1.2rem;
+  background-color: #be9c79;
+  border: 0;
+  font-size: 1.1rem;
+  color: #e4e4e4;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  font-weight: 600;
+}
+
+.btn__general:hover {
+  background-color: #333333;
+}
+
+/* font-family: 'Merienda One', cursive;
+font-family: 'Nunito', sans-serif; */
+
 /* header menus */
 .header {
   position: relative;
@@ -119,7 +152,7 @@ a {
 
 .header .navbar ul li {
   display: inline-block;
-  margin-left: 15px;
+  margin: 0 15px;
 }
 
 .header .navbar ul li a {
@@ -131,6 +164,34 @@ a {
 .header .navbar ul li a:hover {
   color: var(--main-color);
   text-decoration: underline;
+}
+
+/* * section de home */
+
+.home__bg {
+  background-image: url(../images/home-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 18rem 0;
+}
+
+.home__bg .home__infor {
+  padding: 10px;
+  text-align: center;
+  width: 50%;
+}
+
+.home__bg .home__infor h2 {
+  font-family: "Merienda One", cursive;
+  font-size: 3.1rem;
+  padding-bottom: 0.7rem;
+}
+
+.home__bg .home__infor p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #858585;
 }
 
 @media (max-width: 991px) {
