@@ -226,6 +226,46 @@ font-family: 'Nunito', sans-serif; */
   padding: 1rem 0;
 }
 
+/* * felity */
+
+.facilly .facilly__img {
+  margin: 10px auto;
+}
+.facilly .facilly__img img {
+  height: 3rem;
+  margin-bottom: 2rem;
+}
+
+.facilly .facilly__img h2 {
+  font-size: 3.1rem;
+  font-family: "Merienda One", cursive;
+  color: #333333;
+}
+
+.facilly .flex__colum {
+  margin: 1.5rem;
+  width: 20%;
+  text-align: center;
+}
+
+.facilly .flex__colum img {
+  height: 6.5rem;
+}
+
+.facilly .flex__colum h3 {
+  font-size: 1.4rem;
+  color: #333333;
+  padding: 10px 0;
+  font-weight: 700;
+}
+
+.facilly .flex__colum p {
+  font-size: 0.9rem;
+  color: #333333;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
 @media (max-width: 991px) {
   body {
     font-size: 55%;
@@ -271,9 +311,20 @@ font-family: 'Nunito', sans-serif; */
   .about__infor p {
     padding: 10px 0;
   }
+
+  .facilly .flex__colum {
+    margin: 0 auto;
+    width: 43%;
+  }
 }
 @media (max-width: 450px) {
   body {
     font-size: 50%;
+  }
+
+  .facilly .flex__colum {
+    margin: 20px auto;
+    text-align: center;
+    width: 65%;
   }
 }
