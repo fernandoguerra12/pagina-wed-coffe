@@ -266,6 +266,41 @@ font-family: 'Nunito', sans-serif; */
   line-height: 1.8;
 }
 
+/* * menus */
+
+.menu {
+  width: 100%;
+}
+
+.menu .facilly__img {
+  margin: 10px auto;
+}
+.menu .facilly__img img {
+  height: 3rem;
+  margin-bottom: 2rem;
+}
+.menu .facilly__img h2 {
+  font-size: 3.1rem;
+  font-family: "Merienda One", cursive;
+  color: #333333;
+  margin-bottom: 3rem;
+}
+.menu .colum-flex {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.menu .colum-flex img {
+  width: 80%;
+}
+
+.menu .colum-flex h3 {
+  font-size: 1.3rem;
+  padding: 1.4rem 0;
+}
+
 @media (max-width: 991px) {
   body {
     font-size: 55%;
@@ -316,6 +351,10 @@ font-family: 'Nunito', sans-serif; */
     margin: 0 auto;
     width: 43%;
   }
+
+  .menu .colum-flex {
+    width: 40%;
+  }
 }
 @media (max-width: 450px) {
   body {
@@ -326,5 +365,9 @@ font-family: 'Nunito', sans-serif; */
     margin: 20px auto;
     text-align: center;
     width: 65%;
+  }
+
+  .menu .colum-flex {
+    width: 35%;
   }
 }
