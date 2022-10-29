@@ -14,6 +14,7 @@ root {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -44,6 +45,9 @@ li {
 
 .justify-content-between {
   justify-content: space-between;
+}
+.justify-content-center {
+  justify-content: center;
 }
 
 .align-items-center {
@@ -301,6 +305,67 @@ font-family: 'Nunito', sans-serif; */
   padding: 1.4rem 0;
 }
 
+/* * gallery */
+.gallery .facilly__img {
+  margin: 10px auto;
+}
+.gallery .facilly__img img {
+  height: 3rem;
+  margin-bottom: 2rem;
+}
+.gallery .facilly__img h2 {
+  font-size: 3.1rem;
+  font-family: "Merienda One", cursive;
+  color: #333333;
+  margin-bottom: 3rem;
+}
+
+.gallery .gallery__img {
+  object-fit: cover;
+  width: 30%;
+  height: 17rem;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+}
+
+.gallery .gallery__img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* * team */
+.team .facilly__img {
+  margin: 10px auto;
+}
+.team .facilly__img img {
+  height: 3rem;
+  margin-bottom: 2rem;
+}
+.team .facilly__img h2 {
+  font-size: 3.1rem;
+  font-family: "Merienda One", cursive;
+  color: #333333;
+  margin-bottom: 3rem;
+}
+
+.team .gallery__img {
+  object-fit: cover;
+  width: 31%;
+  padding: 0 0.5rem;
+  text-align: center;
+}
+
+.team .gallery__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.team .gallery__img h3 {
+  margin: 1.2rem 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
 @media (max-width: 991px) {
   body {
     font-size: 55%;
@@ -355,6 +420,15 @@ font-family: 'Nunito', sans-serif; */
   .menu .colum-flex {
     width: 40%;
   }
+
+  .gallery .gallery__img {
+    width: 45%;
+    margin: 0.7rem auto;
+  }
+
+  .team .gallery__img {
+    width: 50%;
+  }
 }
 @media (max-width: 450px) {
   body {
@@ -369,5 +443,12 @@ font-family: 'Nunito', sans-serif; */
 
   .menu .colum-flex {
     width: 35%;
+  }
+
+  .gallery .gallery__img {
+    width: 90%;
+  }
+  .team .gallery__img {
+    width: 100%;
   }
 }
