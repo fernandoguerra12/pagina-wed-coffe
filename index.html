@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>coffeet</title>
+    <!-- ! font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- normalize -->
     <link rel="stylesheet" href="css/normalize.css" />
     <!-- style css -->
@@ -230,6 +238,99 @@
       </div>
     </section>
     <!-- ?TEAM ENDS -->
+    <!-- ? contact starts -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="facilly__img">
+            <img src="images/heading-img.png" alt="heading-img" />
+            <h2>Our Team</h2>
+          </div>
+        </div>
+
+        <div
+          class="row gag flex-wrap-wrap justify-content-center align-items-center"
+        >
+          <div class="about__img">
+            <img src="images/contact-img.svg" alt="contact" />
+          </div>
+          <div class="about__form">
+            <form action="" method="post">
+              <h2>Book A Table</h2>
+              <input
+                type="text"
+                name="name"
+                required
+                class="box"
+                maxlength="20"
+                placeholder="entre your name"
+              />
+              <input
+                type="number"
+                name="number"
+                required
+                class="box"
+                maxlength="20"
+                placeholder="entre your number"
+                min="0"
+                max="9999999999"
+                onkeypress="if(this.value.length === 10) return false"
+              />
+              <input
+                type="number"
+                name="quests"
+                required
+                class="box"
+                maxlength="20"
+                placeholder="how many quests"
+                min="0"
+                max="99"
+                onkeypress="if(this.value.length === 2) return false"
+              />
+              <input
+                type="submit"
+                name="send"
+                value="Send Message"
+                class="btn__general"
+              />
+            </form>
+          </div>
+        </div>
+        <div class="row section align-items-center flex-wrap-wrap">
+          <div class="contact__wrap">
+            <div class="contact__btn">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <h3>Our Email</h3>
+            <p>Shaikhanas@Gmail.Com</p>
+            <p>Anasbhai@Gmail.Com</p>
+          </div>
+          <div class="contact__wrap">
+            <div class="contact__btn">
+              <i class="fa-regular fa-clock"></i>
+            </div>
+            <h3>Opening Hours</h3>
+            <p>07:00am To 09:00pm</p>
+          </div>
+          <div class="contact__wrap">
+            <div class="contact__btn">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <h3>Our Email</h3>
+            <p>montelibano - cordoba</p>
+          </div>
+          <div class="contact__wrap">
+            <div class="contact__btn">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <h3>Our Email</h3>
+            <p>+123-456-7890</p>
+            <p>+111-222-3333</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ? contact ends -->
     <script src="js/app.js"></script>
   </body>
 </html>
