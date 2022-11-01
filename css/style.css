@@ -451,6 +451,28 @@ font-family: 'Nunito', sans-serif; */
   color: #333333;
   line-height: 1.7;
 }
+
+.footer {
+  width: 100%;
+  position: relative;
+}
+
+.footer .footer__infor {
+  border-top: 2px solid #333333;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.footer .footer__infor h4 {
+  font-size: 1.2rem;
+  color: #393939;
+  font-weight: 600;
+}
+
+.footer .footer__infor h4 span {
+  color: #be9c79;
+}
 @media (max-width: 991px) {
   body {
     font-size: 55%;
